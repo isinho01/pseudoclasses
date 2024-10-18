@@ -1,0 +1,49 @@
+.links{
+   color: black; 
+   list-style-type: none;
+}
+.links:hover{
+    color: blue;
+}
+input {
+    color: green; 
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 4px; 
+    outline: none; 
+}
+
+input:focus {
+    color: blue;
+    border-color: green;
+}
+input[type="checkbox"] {
+    accent-color: green;
+}
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc; 
+    color: #666; 
+    cursor: not-allowed; 
+}
+.fundoimg {
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fundoimg:nth-child(odd) {
+    background-color: #666; 
+}
+
+.fundoimg:nth-child(even) {
+    background-color: transparent;
+}
