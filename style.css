@@ -99,10 +99,10 @@ form{
     display: block;
     text-align: center;
 }
-p:first-child{
+.principal p:first-child{
     font-weight: bold;
 }
-p:last-child{
+.principal p:last-child{
     font-style: italic;
 }
 .saibamais:active{
