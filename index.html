@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header>
         <nav>
             <ul>
-                <li class="links">Contato</li>
+                <li class="links"><a href="#saibamais">Saiba mais</a></li>
                 <li class="links">Sobre</li>
-                <li class="links">Curiosidades</li>
+                <li class="links"><a href="#formulario">Formulario</a></li>
             </ul>
         </nav>
     </header>
-    <ul>
-        <li><img class="fundoimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72fj_4qCPYIbLU4gr1xXLE0Z__8-p2dyERg&s" alt=""></li>
-        <li><img class="fundoimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72fj_4qCPYIbLU4gr1xXLE0Z__8-p2dyERg&s" alt=""></li>
-        <li><img class="fundoimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72fj_4qCPYIbLU4gr1xXLE0Z__8-p2dyERg&s" alt=""></li>
-        <li><img class="fundoimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72fj_4qCPYIbLU4gr1xXLE0Z__8-p2dyERg&s" alt=""></li>
+    <ul class="imagens_ul">
+        <li><img src="./img/paisagem.jpeg" alt=""></li>
+        <li><img src="./img/paisagem.jpeg" alt=""></li>
+        <li><img src="./img/paisagem.jpeg" alt=""></li>
+        <li><img src="./img/paisagem.jpeg" alt=""></li>
     </ul>
-    <footer>
-        <div>
+    <div class="principal">
+        <p>Cabeçalho e fomulario de contato</p>
+        <p>Galeria de fotos e conteudo principal</p>
+        <p>Botoes interativos e evitar estilo</p>
+    </div>
+   
+    <div class="meus-paragrafos">
+        <p class="important">Este é um parágrafo importante.</p>
+        <p>Este nao é um parágrafo importante.</p>
+    </div>
+   
+    <section id="formulario">
+        <div class="formulario">
             <form method="post">
-                <label for="nome">Nome</label>
+                  <h1 style="text-align: center;">Formulário de contato</h1>
+                <label for="nome">Nome:</label>
                 <input  name="nome" type="text" id="nome" placeholder="Digite seu nome">
                 <br>
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input name="email" type="text" id="email" placeholder="Digite seu email">
                 <br>
                 <label>
@@ -36,10 +49,16 @@
                     Gostaria de receber a newsletter?
                 </label>
                 <br>
-                <button type="submit">Enviar</button>
+                <button class="enviar" type="submit">Enviar</button>
             </form>
         </div>
-    
+    </section>
+    <section id="saibamais">
+        <button class="saibamais" onclick="window.location.href='./Indexs/saibamais.html'">Saiba mais</button>
+    </section>
+       
+    <footer>
+        
     </footer>
 </body>
 </html>
