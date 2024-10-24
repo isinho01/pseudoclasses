@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const nomeInput = document.getElementById('nome');
+    const emailInput = document.getElementById('email');
+    const enviarButton = document.querySelector('.enviar');
+
+    function toggleButtonState() {
+        // Verifica se os campos estão preenchidos
+        if (nomeInput.value.trim() !== '' && emailInput.value.trim() !== '') {
+            enviarButton.removeAttribute('disabled'); // Habilita o botão
+        } else {
+            enviarButton.setAttribute('disabled', 'true'); // Desabilita o botão
+        }
+    }
+
+    // Adiciona eventos de input nos campos
+    nomeInput.addEventListener('input', toggleButtonState);
+    emailInput.addEventListener('input', toggleButtonState);
+});
+    </script>
     <header>
         <nav>
             <ul>
@@ -78,7 +98,7 @@
                     Gostaria de receber a newsletter?
                 </label>
                 <br>
-                <button class="enviar" type="submit">Enviar</button>
+                <button class="enviar" type="submit" disabled>Enviar</button>
             </form>
         </div>
     </section>
